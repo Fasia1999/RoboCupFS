@@ -21,9 +21,9 @@ sudo apt-get install expect
 
 ```
 robovizPath="/home/fasia/roboCup/RoboViz/bin/linux-amd64"
-serverAddress="114.212.84.40"
-loginUser="robocup"
-loginPassword="rinc"
+serverAddress="*.*.*.*"
+loginUser="*"
+loginPassword="*"
 ```
 - robovizPath改为自己主机里roboviz.sh的目录
 - 剩下三个变量如果换服务器的话看名字修改就好了
