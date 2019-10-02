@@ -31,5 +31,6 @@ loginPassword="rinc"
 ```
 ./test.sh
 ```
+- 添加队伍的话需要自己在服务器找相应的start.sh然后执行（会自动开两个连服务器的终端）
 
 
