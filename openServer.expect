@@ -1,0 +1,17 @@
+#!/usr/bin/expect
+set timeout 60
+set loginUser [lindex $argv 1]
+set loginPassword [lindex $argv 2]
+set serverAddress [lindex $argv 0]
+spawn ssh $loginUser@$serverAddress
+expect "yes/no" {
+	send "yes\r"
+	expect "*?assword:" { 
+	send "$loginPassword\r" 
+	expect "$ " {send "rcssserver3d\n"}
+}
+	} "*?assword:" {
+	send "$loginPassword\r" 
+	expect "$ " {send "rcssserver3d\n"}
+}
+interact
